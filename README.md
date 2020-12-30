@@ -9,10 +9,14 @@ I) Set Up Gitpod for project:
       -> sets up & configures project
       ->add scripts, dependencies, version info, names, descriptions, keywords..., everything about project defined in this file
    ii) Steps:
+   -> Create package.json file:
     In Terminal: npm init --y
-
-
-
+   -> Set up values:
+   npm config set init.author.name "2020491"
+   npm config set init.author.email "2020491"
+   npm config set init.license "MIT"
+  -> All dependencies stored in node-modules folder in the express file
+  npm i express
 
 npm run task --var=data
 console.log(process.env.npm_config_var); // data
