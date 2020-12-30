@@ -1,0 +1,25 @@
+{
+  "name": "IWA-CA1",
+  "version": "1.0.0",
+  "description": "GitHub repository storing all app code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gitit": "node upgit.js",
+    "hello": "node HelloWorld.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2020491/IWA-CA1.git"
+  },
+  "keywords": [],
+  "author": "2020491",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/2020491/IWA-CA1/issues"
+  },
+  "homepage": "https://github.com/2020491/IWA-CA1#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
