@@ -1,0 +1,7 @@
+Steps to create a Node.js API Authentication
+
+1) Install Node.js
+2) Create package.  json which holds all pckgs::: In Terminal -> npm init --y
+3) Install express which handles routes ::: In Terminal -> npm install express
+4) Install nodemon which restarts server :: In Terminal -> npm --save-dev nodemon
+5) Create index.js file  
