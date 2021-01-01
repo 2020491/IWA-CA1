@@ -1,0 +1,16 @@
+Github, Git:
+https://docs.github.com/en
+
+Gitpod:
+https://www.gitpod.io/docs/
+
+Bootstrap:
+https://getbootstrap.com/
+
+Node.js:
+https://nodejs.org/en/docs/
+
+VS Code, Extensions:
+https://code.visualstudio.com/docs
+
+
