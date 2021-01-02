@@ -14,6 +14,7 @@ VS Code, Extensions:
 https://code.visualstudio.com/docs
 
 https://www.w3schools.com
+https://www.w3docs.com/
 
 IMG:
 https://www.marcoa.com/national-accounts-program
