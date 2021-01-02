@@ -1,12 +1,32 @@
-body {
-  background-image: url("../_img/BG.bmp");
-  background: rgba(76, 175, 80, 0.3);
-  background-size: cover;
+/*body {
+  background-color: lightblue;
 }
 
-body h1 {
-  color: cyan;
-  font-size: 32px;
-  font-family: Arial, Helvetica, sans-serif;
+h1 {
+  color: white;
+  text-align: center;
 }
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+
+#nav{
+  border-style: double;
+}*/
+
+#Nav_img{
+    max-width: 100%;
+    height: auto;
+}
+
+.jumbotron {
+  background-image: url('../_img/BG.bmp');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+
+
 /*# sourceMappingURL=style.css.map */

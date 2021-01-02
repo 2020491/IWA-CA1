@@ -13,4 +13,7 @@ https://nodejs.org/en/docs/
 VS Code, Extensions:
 https://code.visualstudio.com/docs
 
+https://www.w3schools.com
 
+IMG:
+https://www.marcoa.com/national-accounts-program

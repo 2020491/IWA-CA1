@@ -1,57 +1,111 @@
+<!-- HTML 5 doctype-->
 <!DOCTYPE html>
 <html lang="en">
-
 <html>
 
 <head>
-
-    <!--Page Settings-->
-    <title> HomePage </title>
+    <title>Main Page</title>
     <meta charset="utf-8">
-    <meta name="author" content="Fatime Reisenleitner">
-    <meta name="description" content="Home">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- BOOTSTRAP 4 - CDN included in order to not need to download and host Bootstrap 4 -->
+    <!-- included to ensure proper rendering & touch zoom on Mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Must include jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <!--Link CSS File-->
     <link rel="stylesheet" href="_css/style.css">
 
+    <script>
+        function getWidth(num) {
+            return window.innerWidth;
+        }
+
+        function getHeight() {
+            return window.innerHeight;
+        }
+    </script>
+
 </head>
 
 <body>
-    <!--Navbar Section-->
-    <nav>
-        <ul class="navbar">
-            <li> <a class="active" href="index.php"> Home </a> </li>
-            <li> <a href="login.php"> Time Management </a> </li>
-            <li> <a href="aboutus.php"> About Us </a> </li>
-            <li> <a href="login.php"> Login </a> </li>
-        </ul>
-    </nav>
+    <!--nav bar -->
+    <div class="container-fluid p-0 border bg-dark text-white">
 
-    <!--Header Section-->
-    <header id="main-heading">
-        <div class="banner">
-            <div class="banner-text">
-                <h1 class="heading-title"> HealthDemic </h1>
-                <h3 class="heading-text"> We are an organization dedicated to make life easier during this dreadful
-                    Pandemic. </h3>
+        <div class="row">
+            <!-- Grid Columns -->
+            <div class="col"> <a class="nav-link" href="index.html">Home</a></div>
+            <div class="col"><img id="Nav_img" src="_img/accountIcon.bmp" /></div>
+            <div class="col"> Not logged in</div>
+            <div class="col"> .col 4 </div>
+            <div class="col"> .col 5 </div>
+            <div class="col"> .col 6 </div>
+            <div class="col"> .col 7 </div>
+            <div class="col"> .col 8 </div>
+            <div class="col"> .col 9 </div>
+            <div class="col"> <a class="nav-link" href="about.html">About Us</a></div>
+            <div class="col"> <a class="nav-link" href="about.html">Create Account</a> </div>
+            <div class="col"> <a class="nav-link" href="about.html">Login</a> </div>
+        </div>
+    </div>
+
+
+    <!--Header -->
+    <div class="jumbotron text-center">
+        <h1>Welcome to HealthDemic</h1>
+        <p>A Local Domain to stay Informed and Healthy whilst staying Safe!</p>
+    </div>
+
+
+    <!-- Full width Grid Container -->
+    <h3 style="text-align: center; color:rgb(56, 23, 90);">Current Information:</h3>
+    <div class=" container-fluid p-0 border" style="background:rgb(221, 241, 241); height: 72vh;">
+        <div class="row">
+            <div class="col-4"> <object type="text/html" data="https://www2.hse.ie/coronavirus/"
+                    style="min-width: 100%; min-height: 500%; display:grid; border:5px ridge rgb(199, 236, 143)"></object>
+            </div>
+            <div class="col-4"> <object type="text/html"
+                    data="https://www.independent.ie/world-news/coronavirus/revealed-irelands-priority-list-for-covid-19-vaccine-and-who-will-get-jab-first-39840519.html"
+                    style="min-width: 100%; min-height: 500%; display:grid;border:5px ridge rgb(199, 236, 143)"></object>
+            </div>
+
+            <div class="col-4"> <object type="text/html" data="https://bing.com/covid/local/"
+                    style="min-width: 100%; min-height: 500%; border:5px ridge rgb(199, 236, 143)"></object>
             </div>
         </div>
-    </header>
+    </div>
 
-    <!--Footer Section-->
-    <footer>
-        <div class="ref-row">
+    <div class="row">
+        <!-- Grid Columns -->
+        <div class="col">.col 1</div>
+        <div class="col"> .col 2 </div>
+        <div class="col"> .col 3 </div>
+        <div class="col"> .col 4 </div>
+        <div class="col"> .col 5 </div>
+        <div class="col"> .col 6 </div>
+        <div class="col"> .col 7 </div>
+        <div class="col"> .col 8 </div>
+        <div class="col"> .col 9 </div>
+        <div class="col"> .col 10 </div>
+        <div class="col"> .col 11 </div>
+        <div class="col"> .col 12 </div>
+    </div>
 
-            <!--References Sub-Section-->
-            <div class="ref-col">
-                <ul class="references">
-                    <li> <small> &copy Fatime Reisenleitner 2020 </small> </li>
-                </ul>
-            </div>
-        </div>
-    </footer>
+
+    </div>
+
+    <ul class="">
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+    </ul>
 
 </body>
-
-</html>
