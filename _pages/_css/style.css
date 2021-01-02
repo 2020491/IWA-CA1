@@ -16,17 +16,83 @@ p {
   border-style: double;
 }*/
 
-#Nav_img{
-    max-width: 100%;
+.nav_link
+{
+  color:lightskyblue;
+  padding-left:25%;
+  font-style: italic;
+}
+
+.nav_link:hover
+{
+  color:green;
+}
+
+.nav_link:active {
+  color:yellowgreen;
+}
+
+#home_title{
+  border-color: rgb(146, 146, 146);;
+  border-style: dotted; 
+  text-align: center; 
+  color:rgb(100, 100, 100);
+  text-shadow: 2px 1px rgb(190, 190, 190);
+}
+
+
+#nav_img{
+    max-width: 4%;
     height: auto;
 }
 
-.jumbotron {
-  background-image: url('../_img/BG.bmp');
+#home_header
+{
+    background-image: url('../_img/home_BG.bmp');
+    /* TEXT STYLE*/
+    color:rgb(255, 215, 0, 1);
+    text-shadow: 2px 2px #ffa600;
+}
+
+
+#about_header
+{
+  background-image: url('../_img/about_BG.bmp');
+  /* TEXT STYLE*/
+  color:rgb(255, 215, 0, 1);
+  text-shadow: 2px 2px #ffa600;
+}
+
+#login_header
+{
+  background-image: url('../_img/login_BG.bmp');
+  /* TEXT STYLE*/
+  color:rgb(255, 215, 0, 1);
+  text-shadow: 2px 2px #ffa600;
+}
+
+#login_table_BG
+{
+  background-color:rgb(0, 162, 255);
+  border-style: outset;
+  border-color: royalblue;
+  text-align: center; 
+}
+
+#login_table
+{
+  background-color:rgb(149, 222, 245);
+  border-style: dotted;
+  border-color: seashell;
+  text-align: center; 
+}
+
+.jumbotron 
+{
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  }
+}
 
 
 /*# sourceMappingURL=style.css.map */
