@@ -4,12 +4,14 @@
 <html>
 
 <head>
+    <!--Page Settings-->
     <title>Create Account</title>
     <meta charset="utf-8">
-
+    <meta name="author" content="Fatime Reisenleitner">
+    <meta name="description" content="Join Page">
     <!-- BOOTSTRAP 4 - CDN included in order to not need to download and host Bootstrap 4 -->
     <!-- included to ensure proper rendering & touch zoom on Mobile devices-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Must include jQuery library -->
@@ -62,17 +64,17 @@
 
     <div id="join_table_BG" class="login">
         <a href="index.php" class="close"> </a>
-        <form class="container" id="login_table" action="process.php" method="post">
+        <form class="container" id="login_table" action="process.php" method="post" autocomplete="off">
             <div id="join_table" class="login-content">
                 <br>
-                <input type="text" placeholder="First name" name="firstname" required>
-                <input type="text" placeholder="Last name" name="lasttname" required>
+                <input type="text" placeholder="First name*" name="firstname" required>
+                <input type="text" placeholder="Last name*" name="lasttname" required>
                 <br>
                 <br>
-                <input type="text" placeholder="Username" name="username" required>
+                <input type="text" placeholder="Username*" name="username" required>
                 </br>
                 <br>
-                <input type="password" placeholder="Password" name="password" required>
+                <input type="password" placeholder="Password*" name="password" required>
                 </br>
                 </br>
                 <button type="submit"> Join now </button>

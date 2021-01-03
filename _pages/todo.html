@@ -1,56 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <html>
 
 <head>
-
     <!--Page Settings-->
     <title> To-Do Planner </title>
     <meta charset="utf-8">
     <meta name="author" content="Fatime Reisenleitner">
-    <meta name="description" content="Home">
+    <meta name="description" content="ToDo Page">
+    <!-- BOOTSTRAP 4 - CDN included in order to not need to download and host Bootstrap 4 -->
+    <!-- included to ensure proper rendering & touch zoom on Mobile devices-->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Must include jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <!--Link CSS File-->
     <link rel="stylesheet" href="_css/style.css">
-
 </head>
 
+
 <body>
-    <!--Navbar Section
-    <nav>
-        <ul class="navbar">
-            <li> <a class="active" href="index.php"> Home </a> </li>
-            <li> <a href="login.php"> Time Management </a> </li>
-            <li> <a href="aboutus.php"> About Us </a> </li>
-            <li> <a href="login.php"> Login </a> </li>
-        </ul>
-    </nav>-->
 
-    <!--Header Section
-    <header id="main-heading">
-        <div class="banner">
-            <div class="banner-text">
-                <h1 class="heading-title"> HealthDemic </h1>
-                <h3 class="heading-text"> We are an organization dedicated to make life easier during this dreadful
-                    Pandemic. </h3>
+    <!--nav bar -->
+    <div class="container-fluid p-0 border bg-dark text-white">
+        <div class="row">
+            <!-- Grid Columns -->
+            <div class="col-1" style="border-style: double; border-color:silver;"> <a class="nav_link"
+                    href="index.html">Home</a></div>
+            <div class="col-6" style="border-style: double; border-color:silver;"><img id="nav_img"
+                    src="_img/accountIcon.bmp" /> Logged in. </div>
+
+            <div class="col-2" style="border-style: double; border-color:silver;"> <a class="nav_link"
+                    href="todo.html">Managment</a>
             </div>
+            <div class="col-2" style="border-style: double; border-color:silver;"> <a class="nav_link"
+                    href="about.html">About Us</a></div>
+            <div class="col-1" style="border-style: double; border-color:silver;"> <a class="nav_link"
+                    href="login.html">Sign Out</a> </div>
         </div>
-    </header>-->
+    </div>
 
-    <!--Footer Section
+    <!--Header -->
+    <div id="todo_header" class="jumbotron text-center">
+        <h1>Welcome to Life Managment</h1>
+        <h5>where you Plan, Organize, Lead & Control your life one Task at a time</h5>
+    </div>
+
+
+
+
+
+    <!--JavaScript CRUD Operation-->
+    <table id="todo_form">
+
+        <tr>
+
+            <td>
+                <!-- TO Remove data submitted present in URL add:: event.preventDefault() -->
+                <form onsubmit="event.preventDefault(); onFormSubmit();" autocomplete="off">
+                    <div>
+                        <!--Task Name: wash car, water plants...-->
+                        <label>Task Name*</label>
+                        <input type="text" id="taskName" name="taskName" placeholder="e.g. wash car, water plants..."
+                            required>
+                    </div>
+                    <div>
+                        <!--Category: Career, Finance, Lifestyle, Medical, Education...-->
+                        <label>Category*</label>
+                        <input type="text" id="category" name="category" placeholder="e.g. finance, medical, edu..."
+                            required>
+                    </div>
+                    <div>
+                        <!--most:10, least:0-->
+                        <label>Priority lvl*</label>
+                        <input type="text" id="priority" name="priority" placeholder="highest:10->lowest:0" required>
+                    </div>
+                    <div>
+                        <label>Costs*</label>
+                        <input type="text" id="moneyCost" name="moneyCost" placeholder="e.g. $34" required>
+                    </div>
+                    <div>
+                        <label>Duration*</label>
+                        <input type="text" id="timeCost" name="timeCost" placeholder="e.g. 30 minutes" required>
+                    </div>
+                    <div>
+                        <label>Due Date*</label>
+                        <input type="text" id="dueDate" name="dueDate" placeholder="e.g. Jan 3 2020, daily..." required>
+                    </div>
+                    <div>
+                        <label>Status*</label>
+                        <input type="text" id="status" name="status" placeholder="e.g. 50% completion, done..."
+                            required>
+                    </div>
+
+                    <div class="form-action-buttons">
+                        <input type="submit" value="Submit">
+
+                    </div>
+                </form>
+            </td>
+
+            <td>
+                <table id="ToDoList" class="list">
+                    <thead>
+                        <th>Task Name</th>
+                        <th>Category</th>
+                        <th>Priority lvl</th>
+                        <th>Costs</th>
+                        <th>Duration</th>
+                        <th>Due Date</th>
+                        <th>Status</th>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+
+    </table>
+
+
+
+    <script src="_js/script.js"></script>
+
+    <!--Footer Section-->
     <footer>
-        <div class="ref-row">
-
-            <!--References Sub-Section
-            <div class="ref-col">
-                <ul class="references">
-                    <li> <small> &copy Fatime Reisenleitner 2020 </small> </li>
-                </ul>
-            </div>
-        </div>
-    </footer>-->
+        </br>
+        <small> &copy Fatime Reisenleitner 2021 </small>
+    </footer>
 
 </body>
 
