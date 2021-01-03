@@ -1,0 +1,159 @@
+.nav_link
+{
+  color:lightskyblue;
+  padding-left:25%;
+  font-style: italic;
+}
+
+.nav_link:hover
+{
+  color:green;
+}
+
+.nav_link:active {
+  color:yellowgreen;
+}
+
+#home_title{
+  border-color: rgb(146, 146, 146);
+  border-style: dotted; 
+  text-align: center; 
+  color:rgb(100, 100, 100);
+  text-shadow: 2px 1px rgb(190, 190, 190);
+}
+
+#about_title{
+  border-color: rgba(217, 132, 155, 0.233);
+  border-style: dotted; 
+  text-align: center; 
+  color:rgb(191, 122, 160);
+  text-shadow: 2px 1px rgba(217, 132, 155, 0.37);
+}
+
+#about_normal{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color:rgb(48, 2, 27);
+  text-shadow: 2px 1px rgba(217, 132, 155, 0.062);
+}
+
+#nav_img{
+    max-width: 4%;
+    height: auto;
+}
+
+#home_header
+{
+    background-image: url('../images/home_BG.bmp');
+    /* TEXT STYLE*/
+    color:rgb(255, 215, 0, 1);
+    text-shadow: 2px 2px #ffa600af;
+}
+
+#about_header
+{
+  background-image: url('../images/about_BG.bmp');
+  /* TEXT STYLE*/
+  color:rgb(255, 215, 0, 1);
+  text-shadow: 2px 2px #ffa600ec;
+}
+
+#join_header
+{
+    background-image: url('../images/join_BG.bmp');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    /* TEXT STYLE*/
+    color:rgb(255, 215, 0, 1);
+    text-shadow: 2px 2px #ffa60088;
+}
+
+#login_header
+{
+  background-image: url('../images/login_BG.bmp');
+  /* TEXT STYLE*/
+  color:rgb(255, 215, 0, 1);
+  text-shadow: 2px 2px #ffa60075;
+}
+
+#todo_header
+{
+  background-image: url('../images/todo_BG.bmp');
+  /* TEXT STYLE*/
+  color:rgb(255, 215, 0, 1);
+  text-shadow: 2px 2px #ffa60063;
+}
+
+#join_table_BG
+{
+  padding-inline-start: 14%;
+  background-color:rgb(250, 198, 14);
+  border-style: outset;
+  border-color: rgba(228, 182, 16, 0.479);
+  text-align: center; 
+}
+
+#join_table
+{
+  background-image: url('../images/join_table_BG.bmp');
+  background-color:rgb(250, 198, 14);
+  border-style: dotted;
+  border-color: rgba(250, 198, 14);
+  text-align: center; 
+  color: seashell;
+}
+
+
+#login_table_BG
+{
+  padding-inline-start: 14%;
+  background-color:rgb(3, 43, 66);
+  border-style: outset;
+  border-color: rgba(65, 105, 225, 0.171);
+  text-align: center; 
+}
+
+#login_table
+{
+  background-image: url('../images/login_table_BG.bmp');
+  background-repeat: no-repeat;
+  background-position: center center;
+    background-size: cover;
+  background-color:rgb(149, 222, 245);
+  border-style: dotted;
+  border-color: rgba(192, 192, 192, 0.158);
+  text-align: center; 
+  color: seashell;
+}
+
+#todo_form{
+  /*align: center;*/
+  padding-inline-start: 50%;
+  background-color:rgba(3, 43, 66, 0.733);
+  border-style: outset;
+  border-color: rgba(65, 105, 225, 0.171);
+  text-align: center; 
+  color:turquoise;
+
+
+}
+
+#ToDoList{
+  
+  width:100%;
+  text-align: center; 
+  color: rgb(227, 238, 240);
+}
+
+table, th, td {
+  border: 1px solid rgba(0, 0, 0, 0.459);
+  border-collapse: collapse;
+}
+
+
+.jumbotron 
+{
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -1,13 +1,20 @@
-// Init Server
-const express = require('express');
-const app = express();
+// Read File by passing to require function
+const user = require('./_db/test.json');
 
-// Created authentication routes -> inside _routes folder auth.js file
-// Import created auth_route i.e. nav to file
-const auth_route = require('./_routes/auth');
+var jcontent = {
+    "name": "John",
+    "age": 32
+}
 
-// Create route-middle-ware
-app.use('/api/user', auth_route);
 
-// Start Server
-app.listen(3000, () => console.log('Server Running...'));
+
+console.log("Why " + user.name);
+
+var obj = JSON.parse(user);
+
+
+/*
+console.log(user.address);
+*/
+
+
