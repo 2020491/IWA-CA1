@@ -1,8 +1,6 @@
-
 /*
     To-Do Page operations:::
 */
-
 // Global Vars
 var selectedRow = null;
 
